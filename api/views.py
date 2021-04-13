@@ -101,7 +101,7 @@ def reg_user_email(request):
             return Response({'message': {
                 'Ошибка': 'Пользователь с таким email уже существует.'}},
                 status=status.HTTP_403_FORBIDDEN)
-    except:
+    except Exception:
         return Response({'message': {
             'Ошибка': 'Ошибка запроса'}}, status=status.HTTP_403_FORBIDDEN)
     send_mail(
