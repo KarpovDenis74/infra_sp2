@@ -85,7 +85,7 @@ class TitleWriteSerializer(serializers.ModelSerializer):
         slug_field='slug',
         many=True,
         required=False,
-        )
+    )
 
     class Meta:
         fields = '__all__'
