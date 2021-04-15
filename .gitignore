@@ -3,6 +3,7 @@ env/
 venv/
 .venv
 .venv/
+.env
 
 __pycache__/
 *.py[cod]
@@ -20,4 +21,3 @@ static/
 posts/static/
 
 db.sqlite3
-.env
